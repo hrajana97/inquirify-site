@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquirify - Personalized Sales Training with Sami</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Inquirify Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn get-started">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Master Sales with Personalized Guidance from Sami the Sales Mentor</h1>
+            <p>Boost your sales skills with tailored simulations, real-time feedback, and strategy coaching.</p>
+            <a href="#chat-section" class="btn try-sami">Try Sami Now</a>
+            <img src="sami-graphic.png" alt="Sami Graphic" class="sami-graphic">
+        </div>
+    </section>
+
+    <!-- About Sami Section -->
+    <section class="about-sami">
+        <div class="container">
+            <h2>Meet Sami the Sales Mentor</h2>
+            <ul>
+                <li>Personalized Sales Simulations for real-world scenarios.</li>
+                <li>Get Real-Time Feedback on your sales skills.</li>
+                <li>Create a Sales Strategy One-Pager for future calls.</li>
+            </ul>
+            <p>Sami helps you master skills like rapport building, objection handling, and closing techniques, all in a personalized training environment.</p>
+        </div>
+    </section>
+
+    <!-- Simulation & Feedback Section -->
+    <section class="simulation-feedback">
+        <div class="container">
+            <h2>Simulate Real Sales Conversations</h2>
+            <p>Engage in role-play scenarios where Sami generates unique customer personas, and get real-time feedback across five key sales dimensions:</p>
+            <ul>
+                <li>Rapport Building</li>
+                <li>Qualification</li>
+                <li>Value Proposition</li>
+                <li>Objection Handling</li>
+                <li>Closing</li>
+            </ul>
+            <button class="btn demo">Try Interactive Demo</button>
+        </div>
+    </section>
+
+    <!-- Sales Strategy One-Pager Section -->
+    <section class="strategy-one-pager">
+        <div class="container">
+            <h2>Personalized Sales Strategy One-Pager</h2>
+            <p>Sami creates a customized strategy one-pager after each practice session to help you prepare for future interactions.</p>
+            <img src="strategy-sample.png" alt="Sample Sales Strategy One-Pager">
+        </div>
+    </section>
+
+    <!-- Embedded GPT Chat Section -->
+    <section id="chat-section" class="gpt-chat">
+        <div class="container">
+            <h2>Chat with Sami the Sales Mentor</h2>
+            <div class="chat-interface">
+                <!-- Placeholder for embedded GPT chat -->
+                <div id="chat-box"></div>
+                <script>
+                    // Placeholder JavaScript for connecting to GPT API
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const chatBox = document.getElementById('chat-box');
+                        // Add your API connection logic here
+                        // Example:
+                        // fetch('https://api.example.com/chat', { ... })
+                        // .then(response => response.json())
+                        // .then(data => {
+                        //     chatBox.innerHTML = data.message;
+                        // });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>&copy; 2024 Inquirify. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
