@@ -1,0 +1,29 @@
+Merge branch 'main' of https://github.com/hrajana97/inquirify-site
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please run
+#	git update-ref -d MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Hima Rajana <himarajana@Himas-MacBook-Air.local>
+#
+# On branch main
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	new file:   README.MD
+#	new file:   index.html
+#	new file:   logo.png
+#	new file:   sami-graphic.png
+#	new file:   scripts.js
+#	new file:   styles.css
+#
