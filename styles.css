@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* General Reset and Body Styles */
 body {
     font-family: Arial, sans-serif;
@@ -21,34 +19,37 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004d40; /* Dark green accent */
+    background-color: #004d40;
     padding: 1rem 2rem;
     color: #ffffff;
 }
 
 .header-container {
     display: flex;
-    align-items: center; /* Vertically center image and text */
-    justify-content: space-between; /* Spread out elements */
-    background-color: #004b47; /* Keeps your existing background color */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004b47;
     padding: 20px;
-    width: 100%; /* Makes sure it takes up full width */
+    width: 100%;
 }
 
+/* Specific Fix for Logo Sizing */
+.logo img {
+    width: 150px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 100px; /* Limit the height */
+    display: block; /* Ensures it doesn't behave as an inline element */
+}
+
+/* Header Text */
 h1 {
-    font-size: 1.5em; /* Adjust text size as necessary */
-    color: white; /* Text color that contrasts the background */
+    font-size: 1.5em;
+    color: white;
     margin: 0;
-    margin-left: 20px; /* Adds some spacing between the image and text */
+    margin-left: 20px;
 }
 
-/* Image sizing for the logo */
-header .logo img {
-    width: 100px; /* Explicitly set the width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Prevent the image from growing larger than its container */
-}
-
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -61,6 +62,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Button Styling */
 .btn {
     background-color: #004d40;
     color: #ffffff;
@@ -75,7 +77,7 @@ nav ul li a {
     background-color: #00695c;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 5rem 2rem;
@@ -90,50 +92,4 @@ nav ul li a {
     margin-top: 3rem;
     max-width: 30%;
     height: auto;
-}
-
-/* About Sami Section */
-.about-sami {
-    padding: 4rem 0;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.about-sami ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.about-sami ul li {
-    margin-bottom: 1rem;
-}
-
-/* Simulation & Feedback Section */
-.simulation-feedback {
-    padding: 4rem 0;
-    text-align: center;
-}
-
-.simulation-feedback ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.simulation-feedback ul li {
-    margin-bottom: 1rem;
-}
-
-/* Sales Strategy One-Pager
-a {
-    text-decoration: none; /* Removes the underline from the text */
-    color: blue; /* Change the link color */
-    font-weight: bold; /* Make the text bold */
-    margin-left: 10px; /* Add spacing between the image and the text */
-}
-
-a:hover {
-    text-decoration: underline; /* Adds an underline when hovered over */
-    color: darkblue; /* Changes color on hover */
 }
