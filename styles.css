@@ -28,25 +28,23 @@ header {
 
 .header-container {
     display: flex;
-    align-items: center; /* Vertically centers the items */
-    justify-content: flex-start; /* Aligns items to the left */
-    background-color: #004b47; /* Replace with your preferred background color */
+    align-items: center; /* Vertically center image and text */
+    justify-content: space-between; /* Spread out elements */
+    background-color: #004b47; /* Keeps your existing background color */
     padding: 20px;
-    max-width: 100%; /* Ensures the container doesn’t expand beyond the viewport */
-    overflow: hidden; /* Prevents content overflow */
+    width: 100%; /* Makes sure it takes up full width */
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+    font-size: 1.5em; /* Adjust text size as necessary */
+    color: white; /* Text color that contrasts the background */
+    margin: 0;
+    margin-left: 20px; /* Adds some spacing between the image and text */
 }
 
 header .logo img {
-    max-width: 20px; /* This sets a maximum width for the image */
-    height: auto; /* This ensures the image maintains its aspect ratio */
-    display: block; /* Ensures the image is treated as a block-level element */
+    max-width: 100px; /* Sets the max width for the image */
+    height: auto; /* Ensures the aspect ratio is maintained */
 }
 
 nav ul {
