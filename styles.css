@@ -26,6 +26,14 @@ header {
     color: #ffffff;
 }
 
+.header-container {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    justify-content: flex-start; /* Aligns items to the left */
+    background-color: #004b47; /* Replace with your preferred background color */
+    padding: 20px;
+}
+
 h1 {
     font-size: 2.5em;
     color: #333;
