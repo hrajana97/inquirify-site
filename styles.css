@@ -44,8 +44,9 @@ h1 {
 }
 
 header .logo img {
-    height: 20px; /* Set the height */
-    width: auto; /* Let the width adjust according to the height while keeping the aspect ratio */
+    max-width: 20px; /* This sets a maximum width for the image */
+    height: auto; /* This ensures the image maintains its aspect ratio */
+    display: block; /* Ensures the image is treated as a block-level element */
 }
 
 nav ul {
