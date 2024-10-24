@@ -42,9 +42,11 @@ h1 {
     margin-left: 20px; /* Adds some spacing between the image and text */
 }
 
+/* Image sizing for the logo */
 header .logo img {
-    max-width: 100px; /* Sets the max width for the image */
-    height: auto; /* Ensures the aspect ratio is maintained */
+    width: 100px; /* Explicitly set the width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent the image from growing larger than its container */
 }
 
 nav ul {
