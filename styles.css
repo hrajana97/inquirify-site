@@ -121,4 +121,15 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
-/* Sales Strategy One-Pa
+/* Sales Strategy One-Pager
+a {
+    text-decoration: none; /* Removes the underline from the text */
+    color: blue; /* Change the link color */
+    font-weight: bold; /* Make the text bold */
+    margin-left: 10px; /* Add spacing between the image and the text */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds an underline when hovered over */
+    color: darkblue; /* Changes color on hover */
+}
