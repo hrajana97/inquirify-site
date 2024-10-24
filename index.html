@@ -75,24 +75,19 @@
     </section>
 
     <!-- Embedded GPT Chat Section -->
-    <section id="chat-section" class="gpt-chat">
-        <div class="container">
-            <h2>Chat with Sami the Sales Mentor</h2>
-            <div class="chat-interface">
-                <!-- Placeholder for embedded GPT chat -->
-                <div id="chat-box"></div>
-                <script>
-                    // Placeholder JavaScript for connecting to GPT API
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const chatBox = document.getElementById('chat-box');
-                        // Add your API connection logic here
-                        // Example:
-                        // fetch('https://api.example.com/chat', { ... })
-                        // .then(response => response.json())
-                        // .then(data => {
-                        //     chatBox.innerHTML = data.message;
-                        // });
-                    });
+<!-- Embedded GPT Chat Section -->
+<section id="chat-section" class="gpt-chat">
+    <div class="container">
+        <h2>Chat with Sami the Sales Mentor</h2>
+        <div class="chat-interface" id="chat-box">
+            <!-- Chat conversation will be appended here -->
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message here..." />
+        <button id="send-button" class="btn">Send</button>
+    </div>
+</section>
+
+                
                 </script>
             </div>
         </div>
