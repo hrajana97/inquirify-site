@@ -42,7 +42,8 @@ h1 {
 }
 
 header .logo img {
-    height: 20px;
+    height: 20px; /* Set the height */
+    width: auto; /* Let the width adjust according to the height while keeping the aspect ratio */
 }
 
 nav ul {
