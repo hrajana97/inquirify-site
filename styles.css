@@ -26,7 +26,7 @@ header {
     color: #ffffff;
 }
 
-header-container {
+.header-container {
     display: flex;
     align-items: center; /* Vertically centers the items */
     justify-content: flex-start; /* Aligns items to the left */
