@@ -32,6 +32,8 @@ header {
     justify-content: flex-start; /* Aligns items to the left */
     background-color: #004b47; /* Replace with your preferred background color */
     padding: 20px;
+    max-width: 100%; /* Ensures the container doesn’t expand beyond the viewport */
+    overflow: hidden; /* Prevents content overflow */
 }
 
 h1 {
