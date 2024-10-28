@@ -1,53 +1,23 @@
-// Add event listener to the demo button
-const demoButton = document.querySelector(".btn.demo");
-if (demoButton) {
-    demoButton.addEventListener('click', () => {
-        alert("This feature is under development! Stay tuned.");
-    });
+// Scroll to Sign-Up Section
+function scrollToSignup() {
+    document.getElementById('signup-widget').scrollIntoView({ behavior: 'smooth' });
 }
 
-// Placeholder chat functionality
-const chatBox = document.getElementById('chat-box');
-if (chatBox) {
-    chatBox.innerHTML = "<p>Welcome! Start chatting with Sami the Sales Mentor.</p>";
-}
+// Pricing Slider Interaction
+document.getElementById('pricing-slider').addEventListener('input', function() {
+    const value = this.value;
+    const details = document.getElementById('pricing-details');
+    if (value == 1) {
+        details.innerText = "Individual Plan: $20-$40/month - Access to personalized simulations, real-time feedback, and strategy one-pagers.";
+    } else if (value == 2) {
+        details.innerText = "SME Plan: $150-$300/month - Team collaboration tools, role-play customizations, and feedback analytics.";
+    } else if (value == 3) {
+        details.innerText = "Enterprise Plan: Custom Pricing - Unlimited access, dedicated success manager, and advanced team metrics.";
+    }
+});
 
-// Chat interaction setup
-const userInput = document.getElementById('user-input');
-const sendButton = document.getElementById('send-button');
-
-if (sendButton) {
-    sendButton.addEventListener('click', async () => {
-        const userMessage = userInput.value;
-
-        if (!userMessage.trim()) {
-            return; // Do nothing if the input is empty
-        }
-
-        // Generate the response using the OpenAI API
-        try {
-            const responseMessage = await generateResponse(userMessage);
-
-            // Display the user message and the assistant's response
-            chatBox.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
-            chatBox.innerHTML += `<p><strong>Sami:</strong> ${responseMessage}</p>`;
-            userInput.value = ''; // Clear input after sending
-
-            // Auto-scroll to the latest message
-            chatBox.scrollTop = chatBox.scrollHeight;
-        } catch (error) {
-            console.error('Error:', error);
-            chatBox.innerHTML += `<p><strong>Error:</strong> Unable to fetch response. Please try again later.</p>`;
-        }
-    });
-}
-
-// Allow sending message by pressing Enter key
-if (userInput) {
-    userInput.addEventListener('keypress', (event) => {
-        if (event.key === 'Enter') {
-            event.preventDefault(); // Prevent default form submission if necessary
-            sendButton.click(); // Trigger the click event of the send button
-        }
-    });
-}
+// Contact Form Submission Simulation
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent actual form submission
+    alert("Form submitted successfully! Thank you for reaching out to us.");
+});

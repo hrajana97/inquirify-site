@@ -1,92 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inquirify - Personalized Sales Training with Sami</title>
+    <title>Inquirify - Sales Training with Sami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container header-container">
-            <div class="logo-title">
-                <img src="logo.png" alt="Inquirify Logo" class="logo">
-                <h1 class="product-title">Inquirify: Personalized AI Sales Training</h1>
-            </div>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn get-started">Get Started</a>
-        </div>
-    </header>
-
-    <!-- Hero and About Section Merged -->
-    <section class="hero-merged">
-        <div class="container">
-            <h1>Master Sales with Personalized Guidance from Sami the Sales Mentor</h1>
-            <p>Boost your sales skills with tailored simulations, real-time feedback, and strategy coaching. Sami helps you master skills like rapport building, objection handling, and closing techniques, all in a personalized training environment.</p>
-        </div>
-    </section>
-
-    <!-- Simulation & Feedback Section -->
-    <section class="simulation-feedback">
-        <div class="container">
-            <h2>Simulate Real Sales Conversations</h2>
-            <p>Engage in role-play scenarios where Sami generates unique customer personas, and get real-time feedback across five key sales dimensions:</p>
-            <div class="feedback-container">
-                <div class="feedback-item">
-                    <h3>Rapport Building</h3>
-                    <p>Learn how to build trust and connect with clients effectively.</p>
-                </div>
-                <div class="feedback-item">
-                    <h3>Qualification</h3>
-                    <p>Understand how to qualify prospects and identify their needs.</p>
-                </div>
-                <div class="feedback-item">
-                    <h3>Value Proposition</h3>
-                    <p>Communicate the value of your product or service clearly and persuasively.</p>
-                </div>
-                <div class="feedback-item">
-                    <h3>Objection Handling</h3>
-                    <p>Overcome objections confidently and keep the conversation moving forward.</p>
-                </div>
-                <div class="feedback-item">
-                    <h3>Closing</h3>
-                    <p>Master closing techniques to successfully complete sales deals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Embedded GPT Chat Section -->
-    <section id="chat-section" class="gpt-chat">
-        <div class="container">
-            <h2>Chat with Sami the Sales Mentor</h2>
-            <div class="chat-interface" id="chat-box">
-                <!-- Chat conversation will be appended here -->
-            </div>
-            <input type="text" id="user-input" placeholder="Type your message here..." />
-            <button id="send-button" class="btn">Send</button>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <ul class="footer-menu">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact</a></li>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section cream-background">
+        <h1 class="headline sage">Master Sales with Sami, Your Personalized Mentor</h1>
+        <p class="subheadline">Boost your sales skills with tailored simulations, real-time feedback, and strategy coaching.</p>
+        <button class="cta-button" onclick="scrollToSignup()">Try Sami Now</button>
+        <div class="sami-visual">[Illustration of Sami]</div>
+    </section>
+
+    <!-- Sign-Up Now Widget -->
+    <section id="signup-widget" class="section cream-background signup">
+        <h2 class="section-title sage">Stay Updated with Inquirify</h2>
+        <p class="section-subtitle">Sign up to receive exclusive insights and updates from Sami the Sales Mentor.</p>
+        <form class="signup-form">
+            <input type="email" placeholder="Enter your email…" required>
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <h2 class="section-title sage">How It Works</h2>
+        <div class="abilities">
+            <div class="ability">
+                <h3>Practice Sessions</h3>
+                <p>Practice your sales calls and receive feedback from Sami, our personalized mentor.</p>
+            </div>
+            <div class="ability">
+                <h3>Objection Handling</h3>
+                <p>Go deep on objection handling to learn to close tough sales.</p>
+            </div>
+            <div class="ability">
+                <h3>Sales Strategy One-Pager</h3>
+                <p>Create a sales strategy one-pager to use as a reference during calls.</p>
+            </div>
+        </div>
+        <div class="feedback-dimensions">
+            <h3>Five Key Dimensions of Sales Feedback</h3>
+            <div class="feedback-card">Rapport Building</div>
+            <div class="feedback-card">Qualification</div>
+            <div class="feedback-card">Value Proposition</div>
+            <div class="feedback-card">Objection Handling</div>
+            <div class="feedback-card">Closing</div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <h2 class="section-title sage">Flexible Pricing Plans for Every Sales Team</h2>
+        <div id="slider-container">
+            <input type="range" id="pricing-slider" min="1" max="3">
+            <div id="pricing-details">[Dynamic Pricing Plan Details]</div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title sage">Get in Touch with Us</h2>
+        <p>We're here to answer any questions or provide further details about Inquirify.</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat" class="section">
+        <h2 class="section-title sage">Chat with Sami</h2>
+        <div id="chat-interface">
+            <div class="chat-bubble">[Embedded Chat Interface]</div>
+            <input type="text" placeholder="Ask Sami anything…">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer sage-background">
         <p>&copy; 2024 Inquirify. All rights reserved.</p>
     </footer>
-    
-    <script defer src="scripts.js"></script>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>

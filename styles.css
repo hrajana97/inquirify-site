@@ -1,230 +1,104 @@
-/* styles.css */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquirify - Sales Training with Sami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-/* General Reset and Body Styles */
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFF5E1; /* Cream background */
-    color: #333333;
-}
+    <!-- Hero Section -->
+    <section id="hero" class="section cream-background">
+        <h1 class="headline sage">Master Sales with Sami, Your Personalized Mentor</h1>
+        <p class="subheadline">Boost your sales skills with tailored simulations, real-time feedback, and strategy coaching.</p>
+        <button class="cta-button" onclick="scrollToSignup()">Try Sami Now</button>
+        <div class="sami-visual">[Illustration of Sami]</div>
+    </section>
 
-/* Container to limit max width and center content */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <!-- Sign-Up Now Widget -->
+    <section id="signup-widget" class="section cream-background signup">
+        <h2 class="section-title sage">Stay Updated with Inquirify</h2>
+        <p class="section-subtitle">Sign up to receive exclusive insights and updates from Sami the Sales Mentor.</p>
+        <form class="signup-form">
+            <input type="email" placeholder="Enter your email…" required>
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
+    </section>
 
-/* Header Section Styles */
-header {
-    background-color: #ffffff; /* White background for header */
-    padding: 1rem 2rem;
-    border-bottom: 2px solid #cfd8dc; /* Light gray divider */
-}
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <h2 class="section-title sage">How It Works</h2>
+        <div class="abilities">
+            <div class="ability">
+                <h3>Practice Sessions</h3>
+                <p>Practice your sales calls and receive feedback from Sami, our personalized mentor.</p>
+            </div>
+            <div class="ability">
+                <h3>Objection Handling</h3>
+                <p>Go deep on objection handling to learn to close tough sales.</p>
+            </div>
+            <div class="ability">
+                <h3>Sales Strategy One-Pager</h3>
+                <p>Create a sales strategy one-pager to use as a reference during calls.</p>
+            </div>
+        </div>
+        <div class="feedback-dimensions">
+            <h3>Five Key Dimensions of Sales Feedback</h3>
+            <div class="feedback-card">Rapport Building</div>
+            <div class="feedback-card">Qualification</div>
+            <div class="feedback-card">Value Proposition</div>
+            <div class="feedback-card">Objection Handling</div>
+            <div class="feedback-card">Closing</div>
+        </div>
+    </section>
 
-.header-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    <!-- Pricing Section -->
+    <section id="pricing" class="section">
+        <h2 class="section-title sage">Flexible Pricing Plans for Every Sales Team</h2>
+        <div id="slider-container">
+            <input type="range" id="pricing-slider" min="1" max="3">
+            <div id="pricing-details">[Dynamic Pricing Plan Details]</div>
+        </div>
+    </section>
 
-/* Logo and Title Container */
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Add space between the logo and the title */
-}
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title sage">Get in Touch with Us</h2>
+        <p>We're here to answer any questions or provide further details about Inquirify.</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
 
-.product-title {
-    color: #9caf88; /* Sage green color for text */
-    font-size: 2.0rem; /* Adjust as needed for visibility */
-    font-weight: bold;
-}
+    <!-- Chat Section -->
+    <section id="chat" class="section">
+        <h2 class="section-title sage">Chat with Sami</h2>
+        <div id="chat-interface">
+            <div class="chat-bubble">[Embedded Chat Interface]</div>
+            <input type="text" placeholder="Ask Sami anything…">
+        </div>
+    </section>
 
-/* Specific Fix for Logo Sizing */
-.logo img {
-    max-height: 50px; /* Limit the height to 50px */
-    max-width: 50px; /* Limit the width to 50px */
-    width: auto;
-    height: auto;
-    object-fit: contain;
-}
+    <!-- Footer -->
+    <footer class="footer sage-background">
+        <p>&copy; 2024 Inquirify. All rights reserved.</p>
+    </footer>
 
-/* Navigation Menu Styles */
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-.nav-menu li a {
-    color: #9caf88; /* Sage green text for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-menu li a:hover {
-    color: #D68C45; /* Terracotta color for hover effect */
-}
-
-/* Get Started Button */
-.btn.get-started {
-    background-color: #9caf88; /* Sage green for button */
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn.get-started:hover {
-    background-color: #D68C45; /* Terracotta hover color */
-    color: #ffffff;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 5rem 2rem;
-    background-color: #9caf88; /* Sage green background */
-    color: #ffffff; /* Set text color to white */
-}
-
-/* About Sami Section (Merged with Hero Section) */
-.hero-merged {
-    text-align: center;
-    padding: 5rem 2rem;
-    background-color: #9caf88; /* Sage green background */
-    color: #ffffff; /* Set text color to white */
-}
-
-.hero-merged p {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-}
-
-/* Simulation & Feedback Section */
-.simulation-feedback {
-    padding: 4rem 0;
-    text-align: center;
-    background-color: #ffffff; /* White background for contrast */
-}
-
-.simulation-feedback .feedback-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.feedback-item {
-    background-color: #ecf0f1; /* Light gray for card background */
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Chat Box Styles */
-#chat-box {
-    border: 1px solid #cfd8dc;
-    padding: 10px;
-    height: 300px;
-    overflow-y: auto;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-}
-
-#chat-box p {
-    margin: 5px 0;
-}
-
-#chat-box p strong {
-    color: #9caf88; /* Sage green for better readability */
-}
-
-/* Input and Send Button Styles */
-#user-input {
-    width: calc(100% - 100px);
-    padding: 10px;
-    margin-right: 5px;
-    border: 1px solid #cfd8dc;
-    border-radius: 4px;
-}
-
-#send-button {
-    padding: 10px 20px;
-    background-color: #9caf88;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#send-button:hover {
-    background-color: #D68C45;
-}
-
-/* GPT Chat Container Styles */
-.gpt-chat .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Footer Styles (Styled like Navigation Menu) */
-footer {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-top: 2px solid #cfd8dc;
-    text-align: center;
-}
-
-.footer-menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 1rem 0;
-}
-
-.footer-menu li a {
-    color: #9caf88; /* Sage green text for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.footer-menu li a:hover {
-    color: #D68C45; /* Terracotta color for hover effect */
-}
-
-/* Responsive Header for Mobile */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .btn.get-started {
-        margin-top: 1rem;
-    }
-
-    .footer-menu {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
