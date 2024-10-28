@@ -18,19 +18,17 @@ body {
 
 /* Header Section Styles */
 header {
-    background-color: #004d40;
+    background-color: #ffffff; /* White background for header */
     padding: 1rem 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ffffff; /* White divider between header and hero section */
 }
 
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 /* Logo and Title Container */
 .logo-title {
@@ -40,14 +38,16 @@ header {
 }
 
 .product-title {
-    color: #ffffff; /* White color to match the navigation links */
+    color: #004d40; /* Dark green color for text */
     font-size: 1.25rem; /* Adjust as needed for visibility */
     font-weight: bold;
 }
 
 /* Specific Fix for Logo Sizing */
 .logo img {
-    height: 50px; /* Make the logo more visible */
+    height: 50px; /* Limit the height to 50px */
+    width: 50px; /* Limit the width to 50px */
+    object-fit: contain;
 }
 
 /* Navigation Menu Styles */
@@ -55,10 +55,11 @@ header {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 .nav-menu li a {
-    color: #ffffff;
+    color: #004d40; /* Dark green text for links */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -70,8 +71,8 @@ header {
 
 /* Get Started Button */
 .btn.get-started {
-    background-color: #ffffff; /* Contrast with dark header */
-    color: #004d40;
+    background-color: #004d40; /* Dark green for button */
+    color: #ffffff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 25px;
@@ -81,7 +82,7 @@ header {
 
 .btn.get-started:hover {
     background-color: #b2dfdb; /* Soft green hover */
-    color: #ffffff;
+    color: #004d40;
 }
 
 /* Hero Section */
