@@ -2,7 +2,7 @@
 
 /* General Reset and Body Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFF5E1; /* Cream background */
@@ -39,7 +39,7 @@ header {
 
 .product-title {
     color: #9caf88; /* Sage green color for text */
-    font-size: 1.5rem; /* Adjust as needed for visibility */
+    font-size: 2.0rem; /* Adjust as needed for visibility */
     font-weight: bold;
 }
 
