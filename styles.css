@@ -18,67 +18,56 @@ body {
 
 /* Header Section Styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #004d40;
     padding: 1rem 2rem;
-    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #004b47;
-    padding: 20px;
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Specific Fix for Logo Sizing */
 .logo img {
-    width: 150px; /* Set a fixed width for the logo */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 100px; /* Limit the height */
-    display: block; /* Ensures it doesn't behave as an inline element */
+    height: 50px; /* Make the logo more visible, about 1 inch */
 }
 
-/* Header Text */
-h1 {
-    font-size: 1.5em;
-    color: white;
-    margin: 0;
-    margin-left: 20px;
-}
-
-/* Navigation Styles */
-
-nav ul {
+/* Navigation Menu Styles */
+.nav-menu {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
-nav ul li a {
+.nav-menu li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Button Styling */
+.nav-menu li a:hover {
+    color: #b2dfdb; /* Light green for hover effect */
+}
 
-.btn {
-    background-color: #004d40;
-    color: #ffffff;
+/* Get Started Button */
+.btn.get-started {
+    background-color: #ffffff; /* Contrast with dark header */
+    color: #004d40;
     padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #00695c;
+.btn.get-started:hover {
+    background-color: #b2dfdb; /* Soft green hover */
+    color: #ffffff;
 }
 
 /* Hero Section */
@@ -131,6 +120,7 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
+/* Chat Box Styles */
 #chat-box {
     border: 1px solid #ccc;
     padding: 10px;
@@ -147,6 +137,8 @@ nav ul li a {
 #chat-box p strong {
     color: #004d40; /* Dark green for better readability */
 }
+
+/* Input and Send Button Styles */
 #user-input {
     width: calc(100% - 100px);
     padding: 10px;
@@ -167,6 +159,8 @@ nav ul li a {
 #send-button:hover {
     background-color: #00695c;
 }
+
+/* GPT Chat Container Styles */
 .gpt-chat .container {
     max-width: 600px;
     margin: 0 auto;
@@ -176,3 +170,20 @@ nav ul li a {
     border-radius: 8px;
 }
 
+/* Responsive Header for Mobile */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .btn.get-started {
+        margin-top: 1rem;
+    }
+}
