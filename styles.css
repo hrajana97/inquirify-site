@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #FFF5E1; /* Cream background */
     color: #333333;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .nav-menu li a:hover {
-    color: #9caf88; /* Coral color for hover effect */
+    color: #D68C45; /* Terracotta color for hover effect */
 }
 
 /* Get Started Button */
@@ -81,7 +81,7 @@ header {
 }
 
 .btn.get-started:hover {
-    background-color: #9caf88; /* Coral hover color */
+    background-color: #D68C45; /* Terracotta hover color */
     color: #ffffff;
 }
 
@@ -89,7 +89,7 @@ header {
 .hero {
     text-align: center;
     padding: 5rem 2rem;
-    background-color: #9caf88; /* Coral background */
+    background-color: #9caf88; /* Sage green background */
     color: #ffffff; /* Set text color to white */
 }
 
@@ -97,7 +97,7 @@ header {
 .hero-merged {
     text-align: center;
     padding: 5rem 2rem;
-    background-color: #9caf88; /* Coral background */
+    background-color: #9caf88; /* Sage green background */
     color: #ffffff; /* Set text color to white */
 }
 
@@ -201,28 +201,4 @@ footer {
 }
 
 .footer-menu li a:hover {
-    color: #9caf88; /* Coral color for hover effect */
-}
-
-/* Responsive Header for Mobile */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .btn.get-started {
-        margin-top: 1rem;
-    }
-
-    .footer-menu {
-        flex-direction: column;
-        gap: 1rem;
-    }
-}
+    color: #D68C45; /* Terracotta color for hov
