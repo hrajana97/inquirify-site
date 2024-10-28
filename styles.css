@@ -31,9 +31,23 @@ header {
     margin: 0 auto;
 }
 
+
+/* Logo and Title Container */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add space between the logo and the title */
+}
+
+.product-title {
+    color: #ffffff; /* White color to match the navigation links */
+    font-size: 1.25rem; /* Adjust as needed for visibility */
+    font-weight: bold;
+}
+
 /* Specific Fix for Logo Sizing */
 .logo img {
-    height: 50px; /* Make the logo more visible, about 1 inch */
+    height: 50px; /* Make the logo more visible */
 }
 
 /* Navigation Menu Styles */
