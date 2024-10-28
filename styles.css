@@ -131,4 +131,48 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
-/* Sales Strategy One-Pager
+#chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#chat-box p {
+    margin: 5px 0;
+}
+
+#chat-box p strong {
+    color: #004d40; /* Dark green for better readability */
+}
+#user-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #00695c;
+}
+.gpt-chat .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+

@@ -1,38 +1,22 @@
-import OpenAI from "openai";
-
-// Initialize the OpenAI client
-const openai = new OpenAI();
-
-// Define the function to generate a completion
-async function generateResponse(userMessage) {
-    try {
-        const completion = await openai.chat.completions.create({
-            model: "gpt-4o", // specify the model you want to use
-            messages: [
-                { role: "system", content: "You are a helpful assistant." },
-                { role: "user", content: userMessage },  // User input
-            ],
-        });
-
-        return completion.choices[0].message.content; // Return the response content
-    } catch (error) {
-        console.error("Error generating response:", error);
-        return "Sorry, I encountered an issue generating the response.";
-    }
+// Add event listener to the demo button
+const demoButton = document.querySelector(".btn.demo");
+if (demoButton) {
+    demoButton.addEventListener('click', () => {
+        alert("This feature is under development! Stay tuned.");
+    });
 }
 
-// Example of sending a user message to the API
-document.addEventListener('DOMContentLoaded', () => {
-    const chatBox = document.getElementById('chat-box');
-    const userInput = document.getElementById('user-input');
-    const sendButton = document.getElementById('send-button');
+// Placeholder chat functionality
+const chatBox = document.getElementById('chat-box');
+if (chatBox) {
+    chatBox.innerHTML = "<p>Welcome! Start chatting with Sami the Sales Mentor.</p>";
+}
 
-    // Welcome message
-    if (chatBox) {
-        chatBox.innerHTML = "<p>Welcome! Start chatting with Sami the Sales Mentor.</p>";
-    }
+// Chat interaction setup
+const userInput = document.getElementById('user-input');
+const sendButton = document.getElementById('send-button');
 
-    // Event listener to send the message on button click
+if (sendButton) {
     sendButton.addEventListener('click', async () => {
         const userMessage = userInput.value;
 
@@ -40,12 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
             return; // Do nothing if the input is empty
         }
 
-        // Generate the response using the API
-        const response = await generateResponse(userMessage);
+        // Generate the response using the OpenAI API
+        try {
+            const responseMessage = await generateResponse(userMessage);
 
-        // Display the user message and the assistant's response
-        chatBox.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
-        chatBox.innerHTML += `<p><strong>Sami:</strong> ${response}</p>`;
-        userInput.value = ''; // Clear input after sending
+            // Display the user message and the assistant's response
+            chatBox.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
+            chatBox.innerHTML += `<p><strong>Sami:</strong> ${responseMessage}</p>`;
+            userInput.value = ''; // Clear input after sending
+
+            // Auto-scroll to the latest message
+            chatBox.scrollTop = chatBox.scrollHeight;
+        } catch (error) {
+            console.error('Error:', error);
+            chatBox.innerHTML += `<p><strong>Error:</strong> Unable to fetch response. Please try again later.</p>`;
+        }
     });
-});
+}
+
+// Allow sending message by pressing Enter key
+if (userInput) {
+    userInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent default form submission if necessary
+            sendButton.click(); // Trigger the click event of the send button
+        }
+    });
+}
