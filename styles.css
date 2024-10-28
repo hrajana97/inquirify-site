@@ -66,7 +66,7 @@ header {
 }
 
 .nav-menu li a:hover {
-    color: #85c1e9; /* Light blue for hover effect */
+    color: #9caf88; /* Coral color for hover effect */
 }
 
 /* Get Started Button */
@@ -81,7 +81,7 @@ header {
 }
 
 .btn.get-started:hover {
-    background-color: #3498db; /* Soft blue hover */
+    background-color: #9caf88; /* Coral hover color */
     color: #ffffff;
 }
 
@@ -89,57 +89,42 @@ header {
 .hero {
     text-align: center;
     padding: 5rem 2rem;
-    background-color: #3498db; /* Soft blue background */
+    background-color: #9caf88; /* Coral background */
     color: #ffffff; /* Set text color to white */
 }
 
-.hero .btn {
-    margin-top: 2rem;
-    background-color: #2c3e50;
-    color: #ffffff;
-}
-
-.hero .btn:hover {
-    background-color: #1b2735;
-}
-
-.hero img.sami-graphic {
-    margin-top: 3rem;
-    max-width: 30%;
-    height: auto;
-}
-
-/* About Sami Section */
-.about-sami {
-    padding: 4rem 0;
-    background-color: #ecf0f1; /* Light gray background */
+/* About Sami Section (Merged with Hero Section) */
+.hero-merged {
     text-align: center;
+    padding: 5rem 2rem;
+    background-color: #9caf88; /* Coral background */
+    color: #ffffff; /* Set text color to white */
 }
 
-.about-sami ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.about-sami ul li {
-    margin-bottom: 1rem;
+.hero-merged p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
 }
 
 /* Simulation & Feedback Section */
 .simulation-feedback {
     padding: 4rem 0;
     text-align: center;
+    background-color: #ffffff; /* White background for contrast */
 }
 
-.simulation-feedback ul {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
+.simulation-feedback .feedback-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.simulation-feedback ul li {
-    margin-bottom: 1rem;
+.feedback-item {
+    background-color: #ecf0f1; /* Light gray for card background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Chat Box Styles */
@@ -216,7 +201,7 @@ footer {
 }
 
 .footer-menu li a:hover {
-    color: #85c1e9; /* Light blue for hover effect */
+    color: #9caf88; /* Coral color for hover effect */
 }
 
 /* Responsive Header for Mobile */
